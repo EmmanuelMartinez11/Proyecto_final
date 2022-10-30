@@ -1,0 +1,25 @@
+@mixin textos ($fuentes, $m_textos, $n, $espacio, $pad, $mar) {
+    font-family: $fuentes;
+    font-size: (map-get($map: $textos, $key: $m_textos)*$n);
+    letter-spacing: $espacio;
+    padding: $pad;
+    margin: $mar;
+}
+@mixin index ($index, $fuentes, $m_textos, $n, $espacio, $pad, $mar) {
+    margin-top: 30px;
+    grid-area: $index;
+    .imagenes{
+        width: 200px;
+        height: 200px;
+    }
+    .texto{
+        @include textos ($fuentes, $m_textos, $n, $espacio, $pad, $mar)
+    }
+}
+
+@mixin backgrounds {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+

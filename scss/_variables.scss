@@ -1,0 +1,21 @@
+$index: (
+    "ubicacion": ubicacion,
+    "servicio": servicio,
+    "precio": precio,
+    "garantia": garantia,
+);
+$direccion: (
+    "flecha": row,
+    "columna": column,
+);
+$espacios: (
+    "centro": center,
+    "entre": space-between,
+);
+$textos: (
+    "mayor": 5rem,
+    "pc": 4rem,
+    "tablet": 3rem,
+    "celular": 2.25rem,
+    "default": 1rem,
+);

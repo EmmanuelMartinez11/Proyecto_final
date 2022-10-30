@@ -1,0 +1,449 @@
+@media only screen and (max-width: 1200px) {
+    #main__index {
+        #main__section1 {
+            .titulo{
+                font-size: map-get($map: $textos, $key: "pc");
+            }
+            .frase {
+                font-size: map-get($map: $textos, $key: "pc")/3;
+            }
+            .reserva{
+                font-size: map-get($map: $textos, $key: "pc")/1.5;
+                }
+            }
+        #main__section2 {
+                .subtitulo {
+                    font-size: 2.5rem;
+                    padding-top: 10px;
+                }
+                .texto {
+                    font-size: 1.3rem;
+                    margin: 10px 30px 30px 30px;
+                }
+        }
+        #main__section3 {
+            .sombreado {
+                .subtitulo {
+                    font-size: 4rem;
+                    padding-top: 30px;
+                }
+                .main_imagenes {
+                    width: 150px;
+                    height: 150px;              
+                }
+            }
+        }
+    }
+    #main__habitaciones {
+        
+            .habit__section1 {
+                .sombreado {
+                    .titulo {
+                        font-size: map-get($map: $textos, $key: "pc");
+                    }
+                    .frase {
+                        font-size: (map-get($map: $textos, $key: "pc"))/3;
+                    }
+                }
+            }
+        .fondo {
+            .habit__section {
+                .sub_fondo {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    .imagenes {
+                        max-width: 100%;
+                        height: 300px;
+                    }
+                }
+            }
+        }
+        a {
+            font-size: 2.5rem;
+            margin: 5px;
+            padding: 0
+        }
+    }
+    #main__restaurante {
+        #slider-container {
+            .titulo {
+                font-size: map-get($map: $textos, $key: "pc");
+            }
+            .frase {
+                font-size: (map-get($map: $textos, $key: "pc"))/3;
+            }
+        } 
+    }
+    #main__actividades {
+        #section1__descripcion {
+            .sombreado {
+                .titulo {
+                    font-size: map-get($map: $textos, $key: "pc");
+                }
+                .frase {
+                    font-size: (map-get($map: $textos, $key: "pc"))/3;
+                }
+            }
+        }
+        #section2__cartas {
+            .carta {
+                .atras {
+                   li {
+                    font-size: 1.2rem;
+                   }
+                }
+            }
+        }
+    }
+    footer {
+        font-size: 1.3rem;
+        div {
+            a {
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    #main__index {
+        #main__section1 {
+            height: 50vh;
+            .titulo{
+                font-size: map-get($map: $textos, $key: "tablet");
+            }
+            .frase {
+                font-size: map-get($map: $textos, $key: "tablet")/3;
+            }
+            .reserva{
+                font-size: map-get($map: $textos, $key: "tablet")/1.5;
+                }
+            }
+        #main__section3 {
+            .sombreado {
+                .main__section3__2columnas {
+                    display: flex;
+                    justify-content: space-around;
+                    display: grid;
+                    grid-template-rows: auto auto;
+                    grid-template-columns: auto auto auto auto;
+                    grid-template-areas: "ubicacion" 
+                                        "servicio"   
+                                        "garantia"
+                                        "precio";
+                }
+            }                                     
+        }
+    }
+    #main__habitaciones {
+            .habit__section1 {
+                height: 50vh;
+                .sombreado {
+                    .titulo {
+                        font-size: map-get($map: $textos, $key: "tablet");
+                    }
+                    .frase {
+                        font-size: (map-get($map: $textos, $key: "tablet"))/3;
+                    }
+                }
+            }
+    }
+    #main__restaurante {
+        height: auto;
+        grid-template-columns: auto;
+        grid-row: auto auto auto;
+        grid-template-areas: "section0" "section1" "section2";
+        #section0__menu {
+            height: 50vh;
+            display: block;
+            background-image: url(../assets/images/Imagenes_restaurante/fondo_menu.webp);
+            background-size: cover;
+            background-position: center;
+            .sombreado {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;
+                height: inherit;
+                width: inherit;
+                background-color: rgba(0, 0, 0, 0.708);
+            }
+        }
+        #section1__menu {
+            ul {
+                margin-top: 3%;
+                margin-bottom: 3%;
+            }
+        }
+        #slider-container{
+            height: 60vh;
+            justify-content: start;
+            background-image: none;
+            .sombreado {
+                .titulo {
+                    display: none;
+                }
+                .frase {
+                    display: none;
+                }
+            }
+          }
+    }
+    #main__actividades {
+        #section1__descripcion {
+            height: 50vh;
+            .sombreado {
+                .titulo {
+                    font-size: map-get($map: $textos, $key: "tablet");
+                }
+                .frase {
+                    font-size: (map-get($map: $textos, $key: "tablet"))/3;
+                }
+            }
+        }
+    }
+    footer {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 660px){
+    header {
+        nav {
+            align-content: flex-start;
+       
+            .enlace {
+                margin-right: 40%;
+                
+            }
+            #check {
+                &:checked ~ ul{
+                    left:0;
+                }
+                
+            }
+            .checkbtn{
+                display: block;
+                
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                height: 100%;
+                background: #2c3e50;
+                top: 84px;
+                left: -100%;
+                text-align: center;
+                transition: all 0.5s;
+                li{
+                    display: block;
+                    .active {
+                        background: none;
+                    }
+                    .desactivar {
+                        display: none;
+                    }
+                    #activar {
+                        display: inline-block;
+                    }
+                    a{
+                        font-size: 20px;
+                            &:hover {
+                                background: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #main__index {
+        #main__section1 {
+            height: 40vh;
+        }
+    }
+    #main__restaurante {
+        #section0__menu {
+            height: 40vh;
+        }
+    }
+    #main__habitaciones {
+        .habit__section1 {
+            height: 40vh
+        }
+    }
+    #main__actividades {
+        #section1__descripcion {
+            height: 40vh;
+        }
+    }
+}
+@media only screen and (max-width: 490px) {
+    #main__index {
+        #main__section1 {
+            height: 30vh;
+            .titulo{
+                font-size: map-get($map: $textos, $key: "celular");
+                letter-spacing: 5px;
+            }
+            .frase {
+                font-size: map-get($map: $textos, $key: "celular")/3;
+            }
+            .reserva{
+                font-size: map-get($map: $textos, $key: "celular")/1.5;
+            }
+        }
+        #main__section2 {
+                .subtitulo {
+                    font-size: 2rem;
+                }
+                .imagenes {
+                    width: 150px;
+                    height: 150px;
+                }
+                .texto {
+                    font-size: 1rem;    
+                    margin: 3%;
+                }
+        }
+        #main__section3 {
+            .sombreado {
+                background-color: rgba(0, 0, 0, 0.850);
+                .subtitulo {
+                    font-size: 2rem;
+                }
+                .main__section3__2columnas {
+                    .ubicacion {
+                        .sub_subtitulo {
+                            font-size: 2rem;
+                        }
+                        .imagenes {
+                            height: 150px;
+                            width: 150px;
+                        }
+                        .texto{
+                            font-size: 1.2rem;
+                        }
+                    }
+                    .servicio {
+                        .sub_subtitulo {
+                            font-size: 2rem;
+                        }
+                        .imagenes {
+                            height: 150px;
+                            width: 150px;
+                        }
+                        .texto{
+                            font-size: 1.2rem;
+                        } 
+                    }
+                    .garantia {
+                        .sub_subtitulo {
+                            font-size: 2rem;
+                        }
+                        .imagenes {
+                            height: 150px;
+                            width: 150px;
+                        }
+                        .texto{
+                            font-size: 1.2rem;
+                        }
+                    }
+                    .precio {
+                        .sub_subtitulo {
+                            font-size: 2rem;
+                        }
+                        .imagenes {
+                            height: 150px;
+                            width: 150px;
+                        }
+                        .texto{
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #main__habitaciones {        
+            .habit__section1 {
+                height: 30vh;
+                .sombreado {
+                    .titulo {
+                        font-size: map-get($map: $textos, $key: "celular");
+                    }
+                    .frase {
+                        font-size: (map-get($map: $textos, $key: "celular"))/3;
+                    }
+                }
+            }
+            .fondo {
+            .habit__section {
+                margin: 2%;
+                .subtitulo {
+                    font-size: 2rem;
+                    text-align: center;
+                }
+                .sub_fondo {
+                    border: 2px solid bisque;
+                    color: black;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    .imagenes {
+                        max-width: 100%;
+                        height: 200px;
+                    }
+                    .texto {
+                        margin-left: 15px;
+                        margin-right: 15px;
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+        a {
+            display: flex;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+    }
+    #main__restaurante {
+        #section0__menu {
+            height: 30vh;
+        }
+        #slider-container {
+            .titulo {
+                font-size: map-get($map: $textos, $key: "celular");
+            }
+            .frase {
+                font-size: (map-get($map: $textos, $key: "celular"))/3;
+            }
+        } 
+    }
+    #main__actividades {
+        #section1__descripcion {
+            height: 30vh;
+            .sombreado {
+                .titulo {
+                    font-size: map-get($map: $textos, $key: "celular");
+                }
+                .frase {
+                    font-size: (map-get($map: $textos, $key: "celular"))/3;
+                }
+            }
+        }
+    }
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1rem;   
+    }
+}
