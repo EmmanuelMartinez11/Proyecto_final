@@ -4,22 +4,29 @@
     letter-spacing: $espacio;
     padding: $pad;
     margin: $mar;
+    text-align: center;
 }
-@mixin index ($index, $fuentes, $m_textos, $n, $espacio, $pad, $mar) {
+@mixin index ($index, $t, $fuentes, $m_textos, $n, $espacio, $pad, $mar) {
     margin-top: 30px;
     grid-area: $index;
     .imagenes{
-        width: 200px;
-        height: 200px;
+        width: $t;
+        height: $t;
     }
-    .texto{
+    .sub_subtitulo{
         @include textos ($fuentes, $m_textos, $n, $espacio, $pad, $mar)
     }
 }
-
 @mixin backgrounds {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-
+@mixin flexbox ($d, $ai, $ac, $ji, $jc) {
+    display: flex;
+    flex-direction: $d;
+    align-items: $ai;
+    align-content: $ac;
+    justify-items: $ji;
+    justify-content: $jc;
+}

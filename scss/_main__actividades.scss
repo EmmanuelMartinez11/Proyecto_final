@@ -11,27 +11,23 @@
         color: bisque;
         .sombreado {
             text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-content: center;
-            justify-content: center;
+            @include flexbox (column, center, none, none, center);
             height: inherit;
             width: inherit;
             background-color: rgba(0, 0, 0, 0.767);
             z-index: 100;
             .titulo {
-                @include textos (none, "mayor", 1, 0, 0, 0)
+                @include textos (none, "mayor", 1.2, 1.5vw, 0, 2% 2% 1% 2%);
             }
             .frase {
-                @include textos (none, "mayor", 3, 0, 0, 0)
+                @include textos (none, "mayor", 0.3, 0, 0, 0);
             }
         }
     }
     #section2__cartas {
         margin-top: 20px;
-        display: flex;
+        @include flexbox (row, none, none, none, center);
         flex-wrap: wrap;
-        justify-content: center;
         .carta {
             position: relative;
             width: 300px;
@@ -64,7 +60,7 @@
                     object-fit: cover;
                 }
                 h3 {
-                    font-size: 2rem;
+                    @include textos (none, "mayor", 0.4, 0.08vw, 0, 0); 
                     position: absolute;
                     bottom: 0;
                     width: 100%;
@@ -81,23 +77,18 @@
                 background: #111111;
                 padding: 15px;
                 color: bisque;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
+                @include flexbox (column, none, none, none, space-between);
                 text-align: center;
                 box-shadow: 0 0 10px #E6CEB1;
                 h4 {
-                    font-size: 1.7rem;
-                    padding: 5px;
-                    border-bottom: solid 1px bisque;
+                    @include textos (none, "mayor", 0.4, 0, 0, 1% 1% 0 1%);
                 }
                 p {
                     letter-spacing: 1px;
                 }
                li {
-                font-size: 1rem;
-                border: #BFAB93 2px solid;
-                margin: 2%;
+                @include textos (none, "default", 1, 0, 0, 0); 
+                border-top: #71695e 2px solid;
                }
                .reserva {
                 border-top: solid 1px bisque;

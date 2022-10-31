@@ -12,16 +12,14 @@
         width: 100%;
         position: relative;
         text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
+        @include flexbox (column, none, none, none, center);
         grid-area: section1;
         background-color: rgba(0, 0, 0, 0.749);
         .titulo{
             @include textos (none, "mayor", 1.2, 1.5vw, 0, 2% 2% 1% 2%);
         }
         .frase {
-            @include textos (none, "mayor", 0.3, 0, 0, 0);
+            @include textos (none, "mayor", 0.5, 0, 0, 0);
         }
         .reserva{
             color: bisque;
@@ -50,8 +48,7 @@
         height: auto;
         text-align: center;
         background-image: linear-gradient(black, rgb(51, 50, 50));
-        display: flex;
-        flex-direction: column;
+        @include flexbox (column, none, none, none, none);
         grid-area: section2;
         overflow: hidden;
             .subtitulo {
@@ -84,27 +81,27 @@
                 grid-template-areas: "ubicacion servicio"   
                                     "garantia precio";
                 .ubicacion {
-                    @include index (ubicacion, none, "default", 1.3, 0.2vw, 2vh, 2%);
-                    .sub_subtitulo {
-                        @include textos (none, "mayor", 0.4, 0.2vw, 0, 2%);
+                    @include index (ubicacion, 200px, none, "mayor", 0.4, 0.2vw, 0, 2%);
+                    .texto {
+                        @include textos (none, "default", 1.3, 0.2vw, 2vh, 2%);
                     }                 
                 }
                 .servicio {
-                    @include index (servicio, none, "default", 1.3, 0.2vw, 2vh, 2%);
-                    .sub_subtitulo {
-                        @include textos (none, "mayor", 0.4, 0.2vw, 0, 2%);
+                    @include index (servicio, 200px, none, "mayor", 0.4, 0.2vw, 0, 2%);
+                    .texto {
+                        @include textos (none, "default", 1.3, 0.2vw, 2vh, 2%);
                     }
                 }
                 .garantia {
-                    @include index (garantia, none, "default", 1.3, 0.2vw, 2vh, 2%);
-                    .sub_subtitulo {
-                        @include textos (none, "mayor", 0.4, 0.2vw, 0, 2%);
+                    @include index (garantia, 200px, none, "mayor", 0.4, 0.2vw, 0, 2%);
+                    .texto {
+                        @include textos (none, "default", 1.3, 0.2vw, 2vh, 2%);
                     }
                 }
                 .precio {
-                    @include index (precio, none, "default", 1.3, 0.2vw, 2vh, 2%);
-                    .sub_subtitulo {
-                        @include textos (none, "mayor", 0.4, 0.2vw, 0, 2%);
+                    @include index (precio, 200px, none, "mayor", 0.4, 0.2vw, 0, 2%);
+                    .texto {
+                        @include textos (none, "default", 1.3, 0.2vw, 2vh, 2%);
                     }
                 }
             }

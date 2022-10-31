@@ -2,9 +2,7 @@ footer {
     grid-area: footer;
     background-color: black;
     font-size: 1.5rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include flexbox (row, center, none, none, space-around);
     grid-area: footer; 
     padding-top: 1%;
     padding-bottom: 1%;

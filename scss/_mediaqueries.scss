@@ -2,63 +2,84 @@
     #main__index {
         #main__section1 {
             .titulo{
-                font-size: map-get($map: $textos, $key: "pc");
+                @include textos (none, "pc", 1, 1.5vw, 0, 2% 2% 1% 2%);
             }
             .frase {
-                font-size: map-get($map: $textos, $key: "pc")/3;
+                @include textos (none, "pc", 0.4, 0, 0, 0);
             }
             .reserva{
-                font-size: map-get($map: $textos, $key: "pc")/1.5;
-                }
+                @include textos (none, "pc", 0.6, 0, 0, 1%);
+            }
             }
         #main__section2 {
                 .subtitulo {
-                    font-size: 2.5rem;
-                    padding-top: 10px;
+                    @include textos (none, "pc", 0.8, 0.2vw, 0, 10px);
                 }
                 .texto {
-                    font-size: 1.3rem;
-                    margin: 10px 30px 30px 30px;
+                    @include textos (none, "default", 1.3, 0.1vw, 0, 5px 8vw 15px 8vw);  
                 }
         }
         #main__section3 {
             .sombreado {
                 .subtitulo {
-                    font-size: 4rem;
-                    padding-top: 30px;
+                    @include textos (none, "pc", 0.8, 0.2vw, 2%, 0);
                 }
                 .main_imagenes {
                     width: 150px;
                     height: 150px;              
                 }
             }
+            .main__section3__2columnas {
+                .ubicacion {
+                    @include index (ubicacion, 200px, none, "pc", 0.6, 0.2vw, 0, 2%);              
+                }
+                .servicio {
+                    @include index (servicio, 200px, none, "pc", 0.6, 0.2vw, 0, 2%);
+                }
+                .garantia {
+                    @include index (garantia, 200px, none, "pc", 0.6, 0.2vw, 0, 2%);
+                }
+                .precio {
+                    @include index (precio, 200px, none, "pc", 0.6, 0.2vw, 0, 2%);
+                }
+            }
         }
     }
     #main__habitaciones {
-        
             .habit__section1 {
                 .sombreado {
                     .titulo {
-                        font-size: map-get($map: $textos, $key: "pc");
+                        @include textos (none, "pc", 1, 0.2vw, 0, 0);
                     }
                     .frase {
-                        font-size: (map-get($map: $textos, $key: "pc"))/3;
+                        @include textos (none, "pc", 0.4, 0.1vw, 2%, 0);
                     }
                 }
             }
-        .fondo {
-            .habit__section {
-                .sub_fondo {
-                    display: flex;
-                    flex-direction: column;
-                    text-align: center;
-                    .imagenes {
-                        max-width: 100%;
-                        height: 300px;
+            .fondo {
+                .habit__section {
+                    .subtitulo {
+                        @include textos (none, "pc", 0.8, 0.2vw, 0, 2% 2% 1% 2%);
+                    }
+                    .sub_fondo {
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                        img {
+                            max-width: 100%;
+                            height: 300px;
+                        }
+                        h3 {
+                            @include textos (none, "pc", 0.4, 0, 0, 1% 1% 0 1%);
+                            grid-area: titulo;
+                        }
+                        p {
+                            @include textos (none, "default", 1.3, 0.08vw, 0, 0 1% 1% 1%);   
+                            grid-area: texto;
+                        }
                     }
                 }
             }
-        }
         a {
             font-size: 2.5rem;
             margin: 5px;
@@ -68,10 +89,10 @@
     #main__restaurante {
         #slider-container {
             .titulo {
-                font-size: map-get($map: $textos, $key: "pc");
+                @include textos (none, "pc", 1, 0.2vw, 0, 0);
             }
             .frase {
-                font-size: (map-get($map: $textos, $key: "pc"))/3;
+                @include textos (none, "pc", 0.4, 0.2vw, 0, 0);
             }
         } 
     }
@@ -79,10 +100,10 @@
         #section1__descripcion {
             .sombreado {
                 .titulo {
-                    font-size: map-get($map: $textos, $key: "pc");
+                    @include textos (none, "pc", 1, 0.2vw, 0, 0);
                 }
                 .frase {
-                    font-size: (map-get($map: $textos, $key: "pc"))/3;
+                    @include textos (none, "pc", 0.4, 0.2vw, 0, 0);
                 }
             }
         }
@@ -114,15 +135,15 @@
         #main__section1 {
             height: 50vh;
             .titulo{
-                font-size: map-get($map: $textos, $key: "tablet");
+                @include textos (none, "tablet", 1, 1.5vw, 0, 1%);
             }
             .frase {
-                font-size: map-get($map: $textos, $key: "tablet")/3;
+                @include textos (none, "tablet", 0.4, 0, 0, 0);
             }
             .reserva{
-                font-size: map-get($map: $textos, $key: "tablet")/1.5;
-                }
+                @include textos (none, "tablet", 0.6, 0, 0, 1%);
             }
+        }
         #main__section3 {
             .sombreado {
                 .main__section3__2columnas {
@@ -144,10 +165,10 @@
                 height: 50vh;
                 .sombreado {
                     .titulo {
-                        font-size: map-get($map: $textos, $key: "tablet");
+                        @include textos (none, "tablet", 1, 1.5vw, 0, 1%);
                     }
                     .frase {
-                        font-size: (map-get($map: $textos, $key: "tablet"))/3;
+                        @include textos (none, "tablet", 0.4, 0, 0, 0);
                     }
                 }
             }
@@ -163,6 +184,12 @@
             background-image: url(../assets/images/Imagenes_restaurante/fondo_menu.webp);
             background-size: cover;
             background-position: center;
+            .titulo {
+                @include textos (none, "tablet", 1, 1.5vw, 0, 1%);
+            }
+            .frase {
+                @include textos (none, "tablet", 0.4, 0, 0, 0);
+            }
             .sombreado {
                 text-align: center;
                 display: flex;
@@ -199,10 +226,10 @@
             height: 50vh;
             .sombreado {
                 .titulo {
-                    font-size: map-get($map: $textos, $key: "tablet");
+                    @include textos (none, "tablet", 1, 1.5vw, 0, 1%);
                 }
                 .frase {
-                    font-size: (map-get($map: $textos, $key: "tablet"))/3;
+                    @include textos (none, "tablet", 0.4, 0, 0, 0);
                 }
             }
         }
@@ -239,16 +266,14 @@
                 width: 100%;
                 height: 100vh;
                 height: 100%;
-                background: #2c3e50;
+                background: #000000;
                 top: 84px;
                 left: -100%;
                 text-align: center;
                 transition: all 0.5s;
                 li{
-                    display: block;
-                    .active {
-                        background: none;
-                    }
+                    margin: 13px;
+                    display: inline-block;
                     .desactivar {
                         display: none;
                     }
@@ -256,10 +281,12 @@
                         display: inline-block;
                     }
                     a{
-                        font-size: 20px;
-                            &:hover {
-                                background: none;
-                        }
+                        background: none;
+                        font-size: 1.2rem;
+                    }
+                    .marco {
+                        border: 2px bisque solid;
+                        border-radius: 200px;
                     }
                 }
             }
@@ -267,121 +294,96 @@
     }
     #main__index {
         #main__section1 {
-            height: 40vh;
-        }
-    }
-    #main__restaurante {
-        #section0__menu {
-            height: 40vh;
+            height: 45vh;
         }
     }
     #main__habitaciones {
         .habit__section1 {
-            height: 40vh
+            height: 45vh
+        }
+    }
+    #main__restaurante {
+        #section0__menu {
+            height: 45vh;
         }
     }
     #main__actividades {
         #section1__descripcion {
-            height: 40vh;
+            height: 45vh;
         }
     }
 }
 @media only screen and (max-width: 490px) {
     #main__index {
         #main__section1 {
-            height: 30vh;
+            height: 35vh;
             .titulo{
-                font-size: map-get($map: $textos, $key: "celular");
-                letter-spacing: 5px;
+                @include textos (none, "celular", 1, 1.5vw, 0.5%, 0);
             }
             .frase {
-                font-size: map-get($map: $textos, $key: "celular")/3;
+                @include textos (none, "celular", 0.4, 0, 0, 0);
             }
             .reserva{
-                font-size: map-get($map: $textos, $key: "celular")/1.5;
+                @include textos (none, "celular", 0.8, 0, 0, 0);
             }
         }
         #main__section2 {
                 .subtitulo {
-                    font-size: 2rem;
+                    @include textos (none, "celular", 0.8, 0.2vw, 0, 0)
                 }
                 .imagenes {
                     width: 150px;
                     height: 150px;
                 }
                 .texto {
-                    font-size: 1rem;    
-                    margin: 3%;
+                    @include textos (none, "default", 1.1, 0.2vw, 2%, 0);
                 }
         }
         #main__section3 {
             .sombreado {
                 background-color: rgba(0, 0, 0, 0.850);
                 .subtitulo {
-                    font-size: 2rem;
+                    @include textos (none, "celular", 1, 0.2vw, 2%, 0);
                 }
                 .main__section3__2columnas {
                     .ubicacion {
-                        .sub_subtitulo {
-                            font-size: 2rem;
-                        }
-                        .imagenes {
-                            height: 150px;
-                            width: 150px;
-                        }
-                        .texto{
-                            font-size: 1.2rem;
-                        }
+                        @include index (ubicacion, 150px, none, "celular", 0.7, 0.2vw, 0, 0);
+                        .texto {
+                            @include textos (none, "default", 1.1, 0.2vw, 2%, 0);
+                        }             
                     }
                     .servicio {
-                        .sub_subtitulo {
-                            font-size: 2rem;
-                        }
-                        .imagenes {
-                            height: 150px;
-                            width: 150px;
-                        }
-                        .texto{
-                            font-size: 1.2rem;
-                        } 
+                        @include index (servicio, 150px, none, "celular", 0.7, 0.2vw, 0, 0);
+                        .texto {
+                            @include textos (none, "default", 1.1, 0.2vw, 2%, 0);
+                        }  
                     }
                     .garantia {
-                        .sub_subtitulo {
-                            font-size: 2rem;
-                        }
-                        .imagenes {
-                            height: 150px;
-                            width: 150px;
-                        }
-                        .texto{
-                            font-size: 1.2rem;
-                        }
+                        @include index (garantia, 150px, none, "celular", 0.7, 0.2vw, 0, 0);
+                        .texto {
+                            @include textos (none, "default", 1.1, 0.2vw, 2%, 0);
+                        }  
                     }
                     .precio {
-                        .sub_subtitulo {
-                            font-size: 2rem;
-                        }
-                        .imagenes {
-                            height: 150px;
-                            width: 150px;
-                        }
-                        .texto{
-                            font-size: 1.2rem;
-                        }
+                        @include index (precio, 150px, none, "celular", 0.7, 0.2vw, 0, 0);
+                        .texto {
+                            @include textos (none, "default", 1.1, 0.2vw, 2%, 0);
+                        }  
                     }
                 }
             }
+            
         }
     }
     #main__habitaciones {        
             .habit__section1 {
-                height: 30vh;
+                height: 35vh;
                 .sombreado {
-                    .titulo {
-                        font-size: map-get($map: $textos, $key: "celular");
+                    .titulo{
+                        @include textos (none, "celular", 1, 0, 0.5%, 0);
                     }
                     .frase {
-                        font-size: (map-get($map: $textos, $key: "celular"))/3;
+                        @include textos (none, "celular", 0.4, 0, 0, 0);
                     }
                 }
             }
@@ -417,26 +419,26 @@
     }
     #main__restaurante {
         #section0__menu {
-            height: 30vh;
+            height: 35vh;
         }
         #slider-container {
-            .titulo {
-                font-size: map-get($map: $textos, $key: "celular");
+            .titulo{
+                @include textos (none, "celular", 1, 1.5vw, 0.5%, 0);
             }
             .frase {
-                font-size: (map-get($map: $textos, $key: "celular"))/3;
+                @include textos (none, "celular", 0.4, 0, 0, 0);
             }
         } 
     }
     #main__actividades {
         #section1__descripcion {
-            height: 30vh;
+            height: 35vh;
             .sombreado {
-                .titulo {
-                    font-size: map-get($map: $textos, $key: "celular");
+                .titulo{
+                    @include textos (none, "celular", 1, 0, 0.5%, 0);
                 }
                 .frase {
-                    font-size: (map-get($map: $textos, $key: "celular"))/3;
+                    @include textos (none, "celular", 0.4, 0, 0, 0);
                 }
             }
         }

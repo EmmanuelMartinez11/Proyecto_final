@@ -10,62 +10,60 @@
             height: inherit;
             background-color: rgba(0, 0, 0, 0.619);
             text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: start;
+            @include flexbox (column, none, none, none, center);
             .titulo {
-                @include textos (none, "mayor", 1, 0, 0, 0)
+                @include textos (none, "mayor", 1.2, 1.5vw, 0, 0 0 2% 0);
             }
             .frase {
-                @include textos (none, "mayor", 3, 0, 0, 0)
+                @include textos (none, "mayor", 0.5, 0, 0, 0);
             }
         }
     }
     .fondo {
         background-image: linear-gradient(black, rgb(51, 50, 50));
-        display: flex;
-        flex-direction: column;    
+        @include flexbox (column, none, none, none, none);   
         .habit__section {
             margin: 2%;
             .subtitulo {
-                font-size: 2rem;
-                font-family: 'Playfair', serif;
-                text-align: center;
+                @include textos (none, "mayor", 0.8, 0.2vw, 0, 2% 2% 1% 2%);
             }
             .sub_fondo {
                 color: black;
                 border: 2px solid bisque;
                 background-image: linear-gradient(#DBD3D0, #BAC2DB);
-                display: flex;
-                align-items: center;
-                .imagenes {
+                @include flexbox (row, center, none, none, none);
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-template-rows: auto auto;
+                grid-template-areas: "imagen titulo"
+                                     "imagen texto";
+                img {
                     max-width: 100%;
-                    height: 300px;
+                    height: 350px;
+                    grid-area: imagen;
                 }
-                .texto {
-                    font-size: 1.3rem;
-                    font-family: 'Playfair', serif;
-                    margin-right: 15px;
-                    margin-left: 15px;
+                h3 {
+                    @include textos (none, "mayor", 0.4, 0, 0, 1% 1% 0 1%);
+                    grid-area: titulo;
+                }
+                p {
+                    @include textos (none, "default", 1.5, 0.08vw, 0, 0 1% 1% 1%);   
+                    grid-area: texto;
                 }
             }
         }
     }
     a {
-        display: flex;
-        justify-content: center;
+        @include flexbox (row, none, none, none, center);
         color: bisque;
         font-size: 3.6rem;
         text-decoration: none;
         margin: 40px;
         cursor: pointer;
-        background: linear-gradient(to left, transparent 50%, rgb(99, 96, 96));
-        background-size: 200%;
-        background-position: right;
-        transition: background-position 0.2s;
         &:hover {
-            background-position: left;
-            font-weight: 700;
+            background: bisque;
+            color: rgb(0, 0, 0);
+            transition: all linear 0.3s;
         }
     }
 }

@@ -16,7 +16,7 @@
         }
         .ingresar {
             width: 100%;
-            background: #24303c;
+            background: #403931;
             padding: 1%;
             border-radius: 4px;
             margin-bottom: 2%;
@@ -25,21 +25,26 @@
             font-size: 18px;
             color: bisque;
             &:focus {
-                background: rgb(19, 97, 161);
+                background: #403931;
             }
         }
         .boton {
             width: 100%;
             background: rgb(30, 102, 143);
             border: none;
+            border-radius: 10px;
             padding: 1.5%;
             color: bisque;
             margin: 1% 0;
             font-size: 1.3rem;
             cursor: pointer;
-            &:active {
+            &:hover {
                 background: bisque;
                 color: rgb(7, 51, 77);
+            }
+            &:active {
+                background: greenyellow;
+                color: rgb(0, 0, 0);
             }
         }
     }
