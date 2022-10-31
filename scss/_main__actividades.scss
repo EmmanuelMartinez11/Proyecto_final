@@ -17,10 +17,10 @@
             background-color: rgba(0, 0, 0, 0.767);
             z-index: 100;
             .titulo {
-                @include textos (none, "mayor", 1.2, 1.5vw, 0, 2% 2% 1% 2%);
+                @include textos ("Raleway", "mayor", 1.2, 1.5vw, 0, 2% 2% 1% 2%);
             }
             .frase {
-                @include textos (none, "mayor", 0.3, 0, 0, 0);
+                @include textos ("Raleway", "mayor", 0.3, 5px, 10px, 0);
             }
         }
     }
@@ -60,7 +60,7 @@
                     object-fit: cover;
                 }
                 h3 {
-                    @include textos (none, "mayor", 0.4, 0.08vw, 0, 0); 
+                    @include textos ("Lato", "mayor", 0.4, 0.08vw, 0, 0); 
                     position: absolute;
                     bottom: 0;
                     width: 100%;
@@ -81,19 +81,19 @@
                 text-align: center;
                 box-shadow: 0 0 10px #E6CEB1;
                 h4 {
-                    @include textos (none, "mayor", 0.4, 0, 0, 1% 1% 0 1%);
+                    @include textos ("Raleway", "mayor", 0.4, 0, 0, 1% 1% 0 1%);
                 }
                 p {
                     letter-spacing: 1px;
                 }
                li {
-                @include textos (none, "default", 1, 0, 0, 0); 
+                @include textos ("Lato", "default", 1, 0, 0, 0); 
                 border-top: #71695e 2px solid;
                }
                .reserva {
                 border-top: solid 1px bisque;
                 height: 50px;
-                line-height: 50px;
+                @include textos ("Raleway", "mayor", 0.4, 0, 0, 1% 1% 0 1%);
                }
                a {
                 color: bisque;

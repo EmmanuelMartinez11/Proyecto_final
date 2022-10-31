@@ -16,7 +16,7 @@
             width: 80%;
             text-align: center;
             list-style: none;
-            font-size: 1.2rem;
+            @include textos ("Lato", "default", 1.2, 0.08vw, 1.5%, 0);
             li {
                 list-style: none;
                 &:target ul {
@@ -49,10 +49,9 @@
                     li {
                         
                         a {
-                            padding: 1.5%;
+                            @include textos ("Lato", "default", 1.1, 0.08vw, 1.5%, 0);
                             background: #b59e83;
                             color: #000000;
-                            font-size: 16px;
                             border: 0;
                             border-bottom: 1px solid #ccc;
                             &:hover {
@@ -83,6 +82,7 @@
             text-align: center;
             @include flexbox (column, none, none, none, center);
             div {
+                
                 width: 100%;
                 height: 100%;
                 position: absolute;
@@ -100,9 +100,13 @@
                     background-color: rgba(0, 0, 0, 0.726);
                     height: inherit;
                     width: inherit;
-                    @include flexbox (row, center, none, none, center);
+                    @include flexbox (column, center, none, none, center);
                     color: bisque;
-                    @include textos (none, "default", 1.5, 0.08vw, 0, 0);  
+                    @include textos ("Raleway", "default", 1.4, 0.08vw, 0 2% 0 2%, 0);  
+                    span {
+                        @include textos ("Lato", "default", 1.3, 0.08vw, 0 2% 0 2%, 0); 
+                        border-bottom: #ae6c2a solid 2px; 
+                    }
                 }
             }
             
@@ -114,10 +118,10 @@
                 }
             }
             .titulo {
-                @include textos (none, "mayor", 1.2, 1.5vw, 0, 2% 2% 1% 2%);
+                @include textos ("Raleway", "mayor", 1.2, 1.5vw, 0, 2% 2% 1% 2%);
             }
             .frase {
-                @include textos (none, "mayor", 0.3, 0, 0, 0);
+                @include textos ("Raleway", "mayor", 0.3, 0, 2%, 0);
             }
         }
        

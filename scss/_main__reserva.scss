@@ -1,29 +1,26 @@
 #main__reserva{
     grid-area: main;
     .formulario {
-        font-size: 1.2rem;
+        @include textos ("Lato", "default", 1.5, 0.08vw, 30px, auto); 
         width: 80%;
         background: #1e242b;
-        padding: 30px;
-        margin: auto;
         border-radius: 4px;
         font-family: 'calibri';
         color: bisque;
         box-shadow: 7px 13px 37px #000;
         h4 {
-            font-size: 2rem;
-            margin-bottom: 20px;
+            @include textos ("Raleway", "mayor", 0.66, 0, 0, 1%);
         }
         .ingresar {
             width: 100%;
-            background: #403931;
+            background: #3e3a34;
             padding: 1%;
             border-radius: 4px;
             margin-bottom: 2%;
             border: 1px solid #9da6b9;
             font-family: 'calibri';
             font-size: 18px;
-            color: bisque;
+            color: rgb(246, 246, 246);
             &:focus {
                 background: #403931;
             }

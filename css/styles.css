@@ -50,7 +50,12 @@ header {
         line-height: 20px;
         margin: 5px; }
         header nav ul li a {
-          font-size: 1.2rem;
+          font-family: "Roboto";
+          font-size: 1.3rem;
+          letter-spacing: 0;
+          padding: 0;
+          margin: 0;
+          text-align: center;
           color: bisque;
           background: black;
           border-radius: 10px;
@@ -88,14 +93,14 @@ header {
     grid-area: section1;
     background-color: rgba(0, 0, 0, 0.749); }
     #main__index #main__section1 .titulo {
-      font-family: none;
+      font-family: "Raleway";
       font-size: 6rem;
       letter-spacing: 1.5vw;
       padding: 0;
       margin: 2% 2% 1% 2%;
       text-align: center; }
     #main__index #main__section1 .frase {
-      font-family: none;
+      font-family: "Raleway";
       font-size: 2.5rem;
       letter-spacing: 0;
       padding: 0;
@@ -103,21 +108,20 @@ header {
       text-align: center; }
     #main__index #main__section1 .reserva {
       color: bisque;
-      font-family: none;
+      font-family: "Roboto";
       font-size: 3.5rem;
       letter-spacing: 0;
       padding: 0;
-      margin: 1%;
+      margin: 2% 0 2% 0;
       text-align: center;
       text-decoration: none;
-      cursor: pointer;
-      background: linear-gradient(to left, transparent 50%, #636060);
-      background-size: 200%;
-      background-position: right;
-      transition: background-position 0.2s; }
+      border: 2px bisque solid;
+      border-radius: 50px;
+      cursor: pointer; }
       #main__index #main__section1 .reserva:hover {
-        background-position: left;
-        font-weight: 700; }
+        background: bisque;
+        color: black;
+        transition: all linear 0.3s; }
     #main__index #main__section1 .main__video {
       width: 100vw;
       height: auto;
@@ -137,7 +141,7 @@ header {
     grid-area: section2;
     overflow: hidden; }
     #main__index #main__section2 .subtitulo {
-      font-family: none;
+      font-family: "Raleway";
       font-size: 4rem;
       letter-spacing: 0.2vw;
       padding: 0;
@@ -147,7 +151,7 @@ header {
       width: 200px;
       height: 200px; }
     #main__index #main__section2 .texto {
-      font-family: none;
+      font-family: "Lato";
       font-size: 1.5rem;
       letter-spacing: 0.1vw;
       padding: 0;
@@ -164,7 +168,7 @@ header {
     #main__index #main__section3 .sombreado {
       background-color: rgba(0, 0, 0, 0.85); }
       #main__index #main__section3 .sombreado .subtitulo {
-        font-family: none;
+        font-family: "Raleway";
         font-size: 4rem;
         letter-spacing: 0.2vw;
         padding: 2vh;
@@ -182,14 +186,14 @@ header {
             width: 200px;
             height: 200px; }
           #main__index #main__section3 .sombreado .main__section3__2columnas .ubicacion .sub_subtitulo {
-            font-family: none;
+            font-family: "Raleway";
             font-size: 2rem;
             letter-spacing: 0.2vw;
             padding: 0;
             margin: 2%;
             text-align: center; }
           #main__index #main__section3 .sombreado .main__section3__2columnas .ubicacion .texto {
-            font-family: none;
+            font-family: "Lato";
             font-size: 1.3rem;
             letter-spacing: 0.2vw;
             padding: 2vh;
@@ -202,14 +206,14 @@ header {
             width: 200px;
             height: 200px; }
           #main__index #main__section3 .sombreado .main__section3__2columnas .servicio .sub_subtitulo {
-            font-family: none;
+            font-family: "Raleway";
             font-size: 2rem;
             letter-spacing: 0.2vw;
             padding: 0;
             margin: 2%;
             text-align: center; }
           #main__index #main__section3 .sombreado .main__section3__2columnas .servicio .texto {
-            font-family: none;
+            font-family: "Lato";
             font-size: 1.3rem;
             letter-spacing: 0.2vw;
             padding: 2vh;
@@ -222,14 +226,14 @@ header {
             width: 200px;
             height: 200px; }
           #main__index #main__section3 .sombreado .main__section3__2columnas .garantia .sub_subtitulo {
-            font-family: none;
+            font-family: "Raleway";
             font-size: 2rem;
             letter-spacing: 0.2vw;
             padding: 0;
             margin: 2%;
             text-align: center; }
           #main__index #main__section3 .sombreado .main__section3__2columnas .garantia .texto {
-            font-family: none;
+            font-family: "Lato";
             font-size: 1.3rem;
             letter-spacing: 0.2vw;
             padding: 2vh;
@@ -242,14 +246,14 @@ header {
             width: 200px;
             height: 200px; }
           #main__index #main__section3 .sombreado .main__section3__2columnas .precio .sub_subtitulo {
-            font-family: none;
+            font-family: "Raleway";
             font-size: 2rem;
             letter-spacing: 0.2vw;
             padding: 0;
             margin: 2%;
             text-align: center; }
           #main__index #main__section3 .sombreado .main__section3__2columnas .precio .texto {
-            font-family: none;
+            font-family: "Lato";
             font-size: 1.3rem;
             letter-spacing: 0.2vw;
             padding: 2vh;
@@ -277,17 +281,17 @@ header {
       justify-items: none;
       justify-content: center; }
       #main__habitaciones .habit__section1 .sombreado .titulo {
-        font-family: none;
+        font-family: "Raleway";
         font-size: 6rem;
         letter-spacing: 1.5vw;
         padding: 0;
-        margin: 0 0 2% 0;
+        margin: 2% 2% 1% 2%;
         text-align: center; }
       #main__habitaciones .habit__section1 .sombreado .frase {
-        font-family: none;
-        font-size: 2.5rem;
-        letter-spacing: 0;
-        padding: 0;
+        font-family: "Raleway";
+        font-size: 1.5rem;
+        letter-spacing: 5px;
+        padding: 10px;
         margin: 0;
         text-align: center; }
   #main__habitaciones .fondo {
@@ -301,7 +305,7 @@ header {
     #main__habitaciones .fondo .habit__section {
       margin: 2%; }
       #main__habitaciones .fondo .habit__section .subtitulo {
-        font-family: none;
+        font-family: "Raleway";
         font-size: 4rem;
         letter-spacing: 0.2vw;
         padding: 0;
@@ -326,7 +330,7 @@ header {
           height: 350px;
           grid-area: imagen; }
         #main__habitaciones .fondo .habit__section .sub_fondo h3 {
-          font-family: none;
+          font-family: "Raleway";
           font-size: 2rem;
           letter-spacing: 0;
           padding: 0;
@@ -334,7 +338,7 @@ header {
           text-align: center;
           grid-area: titulo; }
         #main__habitaciones .fondo .habit__section .sub_fondo p {
-          font-family: none;
+          font-family: "Lato";
           font-size: 1.5rem;
           letter-spacing: 0.08vw;
           padding: 0;
@@ -349,9 +353,13 @@ header {
     justify-items: none;
     justify-content: center;
     color: bisque;
-    font-size: 3.6rem;
-    text-decoration: none;
+    font-family: "Raleway";
+    font-size: 4rem;
+    letter-spacing: 0;
+    padding: 0;
     margin: 40px;
+    text-align: center;
+    text-decoration: none;
     cursor: pointer; }
     #main__habitaciones a:hover {
       background: bisque;
@@ -380,7 +388,12 @@ header {
       width: 80%;
       text-align: center;
       list-style: none;
-      font-size: 1.2rem; }
+      font-family: "Lato";
+      font-size: 1.2rem;
+      letter-spacing: 0.08vw;
+      padding: 1.5%;
+      margin: 0;
+      text-align: center; }
       #main__restaurante #section1__menu ul li {
         list-style: none; }
         #main__restaurante #section1__menu ul li:target ul {
@@ -407,10 +420,14 @@ header {
           overflow: hidden;
           transition: .5s all ease-in; }
           #main__restaurante #section1__menu ul li ul li a {
+            font-family: "Lato";
+            font-size: 1.1rem;
+            letter-spacing: 0.08vw;
             padding: 1.5%;
+            margin: 0;
+            text-align: center;
             background: #b59e83;
             color: #000000;
-            font-size: 16px;
             border: 0;
             border-bottom: 1px solid #ccc; }
             #main__restaurante #section1__menu ul li ul li a:hover {
@@ -456,18 +473,26 @@ header {
           height: inherit;
           width: inherit;
           display: flex;
-          flex-direction: row;
+          flex-direction: column;
           align-items: center;
           align-content: none;
           justify-items: none;
           justify-content: center;
           color: bisque;
-          font-family: none;
-          font-size: 1.5rem;
+          font-family: "Raleway";
+          font-size: 1.4rem;
           letter-spacing: 0.08vw;
-          padding: 0;
+          padding: 0 2% 0 2%;
           margin: 0;
           text-align: center; }
+          #main__restaurante #slider-container .sombreado div p span {
+            font-family: "Lato";
+            font-size: 1.3rem;
+            letter-spacing: 0.08vw;
+            padding: 0 2% 0 2%;
+            margin: 0;
+            text-align: center;
+            border-bottom: #ae6c2a solid 2px; }
       #main__restaurante #slider-container .sombreado .slider-contenido:nth-child(1) {
         background-size: cover;
         background-position: center;
@@ -581,17 +606,17 @@ header {
         background-position: center;
         background-image: url("../assets/images/Imagenes_restaurante/slide28.webp"); }
       #main__restaurante #slider-container .sombreado .titulo {
-        font-family: none;
+        font-family: "Raleway";
         font-size: 6rem;
         letter-spacing: 1.5vw;
         padding: 0;
         margin: 2% 2% 1% 2%;
         text-align: center; }
       #main__restaurante #slider-container .sombreado .frase {
-        font-family: none;
+        font-family: "Raleway";
         font-size: 1.5rem;
         letter-spacing: 0;
-        padding: 0;
+        padding: 2%;
         margin: 0;
         text-align: center; }
 
@@ -621,17 +646,17 @@ header {
       background-color: rgba(0, 0, 0, 0.767);
       z-index: 100; }
       #main__actividades #section1__descripcion .sombreado .titulo {
-        font-family: none;
+        font-family: "Raleway";
         font-size: 6rem;
         letter-spacing: 1.5vw;
         padding: 0;
         margin: 2% 2% 1% 2%;
         text-align: center; }
       #main__actividades #section1__descripcion .sombreado .frase {
-        font-family: none;
+        font-family: "Raleway";
         font-size: 1.5rem;
-        letter-spacing: 0;
-        padding: 0;
+        letter-spacing: 5px;
+        padding: 10px;
         margin: 0;
         text-align: center; }
   #main__actividades #section2__cartas {
@@ -671,7 +696,7 @@ header {
           height: 100%;
           object-fit: cover; }
         #main__actividades #section2__cartas .carta .adelante h3 {
-          font-family: none;
+          font-family: "Lato";
           font-size: 2rem;
           letter-spacing: 0.08vw;
           padding: 0;
@@ -699,7 +724,7 @@ header {
         text-align: center;
         box-shadow: 0 0 10px #E6CEB1; }
         #main__actividades #section2__cartas .carta .atras h4 {
-          font-family: none;
+          font-family: "Raleway";
           font-size: 2rem;
           letter-spacing: 0;
           padding: 0;
@@ -708,7 +733,7 @@ header {
         #main__actividades #section2__cartas .carta .atras p {
           letter-spacing: 1px; }
         #main__actividades #section2__cartas .carta .atras li {
-          font-family: none;
+          font-family: "Lato";
           font-size: 1rem;
           letter-spacing: 0;
           padding: 0;
@@ -718,7 +743,12 @@ header {
         #main__actividades #section2__cartas .carta .atras .reserva {
           border-top: solid 1px bisque;
           height: 50px;
-          line-height: 50px; }
+          font-family: "Raleway";
+          font-size: 2rem;
+          letter-spacing: 0;
+          padding: 0;
+          margin: 1% 1% 0 1%;
+          text-align: center; }
         #main__actividades #section2__cartas .carta .atras a {
           color: bisque;
           font-size: 1.5rem;
@@ -735,28 +765,35 @@ header {
 #main__reserva {
   grid-area: main; }
   #main__reserva .formulario {
-    font-size: 1.2rem;
-    width: 80%;
-    background: #1e242b;
+    font-family: "Lato";
+    font-size: 1.5rem;
+    letter-spacing: 0.08vw;
     padding: 30px;
     margin: auto;
+    text-align: center;
+    width: 80%;
+    background: #1e242b;
     border-radius: 4px;
     font-family: 'calibri';
     color: bisque;
     box-shadow: 7px 13px 37px #000; }
     #main__reserva .formulario h4 {
-      font-size: 2rem;
-      margin-bottom: 20px; }
+      font-family: "Raleway";
+      font-size: 3.3rem;
+      letter-spacing: 0;
+      padding: 0;
+      margin: 1%;
+      text-align: center; }
     #main__reserva .formulario .ingresar {
       width: 100%;
-      background: #403931;
+      background: #3e3a34;
       padding: 1%;
       border-radius: 4px;
       margin-bottom: 2%;
       border: 1px solid #9da6b9;
       font-family: 'calibri';
       font-size: 18px;
-      color: bisque; }
+      color: #f6f6f6; }
       #main__reserva .formulario .ingresar:focus {
         background: #403931; }
     #main__reserva .formulario .boton {
@@ -779,16 +816,19 @@ header {
 footer {
   grid-area: footer;
   background-color: black;
+  font-family: "Roboto";
   font-size: 1.5rem;
+  letter-spacing: 0;
+  padding: 1% 0 1% 0;
+  margin: 0;
+  text-align: center;
   display: flex;
   flex-direction: row;
   align-items: center;
   align-content: none;
   justify-items: none;
   justify-content: space-around;
-  grid-area: footer;
-  padding-top: 1%;
-  padding-bottom: 1%; }
+  grid-area: footer; }
   footer div {
     padding: 1%; }
     footer div a img {
@@ -797,42 +837,42 @@ footer {
 
 @media only screen and (max-width: 1200px) {
   #main__index #main__section1 .titulo {
-    font-family: none;
+    font-family: "Raleway";
     font-size: 4rem;
     letter-spacing: 1.5vw;
     padding: 0;
     margin: 2% 2% 1% 2%;
     text-align: center; }
   #main__index #main__section1 .frase {
-    font-family: none;
+    font-family: "Raleway";
     font-size: 1.6rem;
     letter-spacing: 0;
     padding: 0;
     margin: 0;
     text-align: center; }
   #main__index #main__section1 .reserva {
-    font-family: none;
+    font-family: "Raleway";
     font-size: 2.4rem;
     letter-spacing: 0;
     padding: 0;
-    margin: 1%;
+    margin: 2% 0 2% 0;
     text-align: center; }
   #main__index #main__section2 .subtitulo {
-    font-family: none;
+    font-family: "Raleway";
     font-size: 3.2rem;
     letter-spacing: 0.2vw;
     padding: 0;
     margin: 10px;
     text-align: center; }
   #main__index #main__section2 .texto {
-    font-family: none;
+    font-family: "Lato";
     font-size: 1.3rem;
     letter-spacing: 0.1vw;
     padding: 0;
     margin: 5px 8vw 15px 8vw;
     text-align: center; }
   #main__index #main__section3 .sombreado .subtitulo {
-    font-family: none;
+    font-family: "Raleway";
     font-size: 3.2rem;
     letter-spacing: 0.2vw;
     padding: 2%;
@@ -848,7 +888,7 @@ footer {
       width: 200px;
       height: 200px; }
     #main__index #main__section3 .main__section3__2columnas .ubicacion .sub_subtitulo {
-      font-family: none;
+      font-family: "Raleway";
       font-size: 2.4rem;
       letter-spacing: 0.2vw;
       padding: 0;
@@ -861,7 +901,7 @@ footer {
       width: 200px;
       height: 200px; }
     #main__index #main__section3 .main__section3__2columnas .servicio .sub_subtitulo {
-      font-family: none;
+      font-family: "Raleway";
       font-size: 2.4rem;
       letter-spacing: 0.2vw;
       padding: 0;
@@ -874,7 +914,7 @@ footer {
       width: 200px;
       height: 200px; }
     #main__index #main__section3 .main__section3__2columnas .garantia .sub_subtitulo {
-      font-family: none;
+      font-family: "Raleway";
       font-size: 2.4rem;
       letter-spacing: 0.2vw;
       padding: 0;
@@ -887,28 +927,28 @@ footer {
       width: 200px;
       height: 200px; }
     #main__index #main__section3 .main__section3__2columnas .precio .sub_subtitulo {
-      font-family: none;
+      font-family: "Raleway";
       font-size: 2.4rem;
       letter-spacing: 0.2vw;
       padding: 0;
       margin: 2%;
       text-align: center; }
   #main__habitaciones .habit__section1 .sombreado .titulo {
-    font-family: none;
+    font-family: "Raleway";
     font-size: 4rem;
     letter-spacing: 0.2vw;
     padding: 0;
     margin: 0;
     text-align: center; }
   #main__habitaciones .habit__section1 .sombreado .frase {
-    font-family: none;
+    font-family: "Raleway";
     font-size: 1.6rem;
     letter-spacing: 0.1vw;
     padding: 2%;
     margin: 0;
     text-align: center; }
   #main__habitaciones .fondo .habit__section .subtitulo {
-    font-family: none;
+    font-family: "Raleway";
     font-size: 3.2rem;
     letter-spacing: 0.2vw;
     padding: 0;
@@ -922,7 +962,7 @@ footer {
       max-width: 100%;
       height: 300px; }
     #main__habitaciones .fondo .habit__section .sub_fondo h3 {
-      font-family: none;
+      font-family: "Raleway";
       font-size: 1.6rem;
       letter-spacing: 0;
       padding: 0;
@@ -930,7 +970,7 @@ footer {
       text-align: center;
       grid-area: titulo; }
     #main__habitaciones .fondo .habit__section .sub_fondo p {
-      font-family: none;
+      font-family: "Lato";
       font-size: 1.3rem;
       letter-spacing: 0.08vw;
       padding: 0;
@@ -942,28 +982,28 @@ footer {
     margin: 5px;
     padding: 0; }
   #main__restaurante #slider-container .titulo {
-    font-family: none;
+    font-family: "Raleway";
     font-size: 4rem;
     letter-spacing: 0.2vw;
     padding: 0;
     margin: 0;
     text-align: center; }
   #main__restaurante #slider-container .frase {
-    font-family: none;
+    font-family: "Raleway";
     font-size: 1.6rem;
     letter-spacing: 0.2vw;
     padding: 0;
     margin: 0;
     text-align: center; }
   #main__actividades #section1__descripcion .sombreado .titulo {
-    font-family: none;
+    font-family: "Raleway";
     font-size: 4rem;
     letter-spacing: 0.2vw;
     padding: 0;
     margin: 0;
     text-align: center; }
   #main__actividades #section1__descripcion .sombreado .frase {
-    font-family: none;
+    font-family: "Raleway";
     font-size: 1.6rem;
     letter-spacing: 0.2vw;
     padding: 0;
@@ -981,25 +1021,25 @@ footer {
   #main__index #main__section1 {
     height: 50vh; }
     #main__index #main__section1 .titulo {
-      font-family: none;
+      font-family: "Raleway";
       font-size: 3rem;
       letter-spacing: 1.5vw;
       padding: 0;
       margin: 1%;
       text-align: center; }
     #main__index #main__section1 .frase {
-      font-family: none;
+      font-family: "Raleway";
       font-size: 1.2rem;
       letter-spacing: 0;
       padding: 0;
       margin: 0;
       text-align: center; }
     #main__index #main__section1 .reserva {
-      font-family: none;
+      font-family: "Raleway";
       font-size: 1.8rem;
       letter-spacing: 0;
       padding: 0;
-      margin: 1%;
+      margin: 2% 0 2% 0;
       text-align: center; }
   #main__index #main__section3 .sombreado .main__section3__2columnas {
     display: flex;
@@ -1011,14 +1051,14 @@ footer {
   #main__habitaciones .habit__section1 {
     height: 50vh; }
     #main__habitaciones .habit__section1 .sombreado .titulo {
-      font-family: none;
+      font-family: "Raleway";
       font-size: 3rem;
       letter-spacing: 1.5vw;
       padding: 0;
       margin: 1%;
       text-align: center; }
     #main__habitaciones .habit__section1 .sombreado .frase {
-      font-family: none;
+      font-family: "Raleway";
       font-size: 1.2rem;
       letter-spacing: 0;
       padding: 0;
@@ -1036,14 +1076,14 @@ footer {
       background-size: cover;
       background-position: center; }
       #main__restaurante #section0__menu .titulo {
-        font-family: none;
+        font-family: "Raleway";
         font-size: 3rem;
         letter-spacing: 1.5vw;
         padding: 0;
         margin: 1%;
         text-align: center; }
       #main__restaurante #section0__menu .frase {
-        font-family: none;
+        font-family: "Raleway";
         font-size: 1.2rem;
         letter-spacing: 0;
         padding: 0;
@@ -1072,14 +1112,14 @@ footer {
   #main__actividades #section1__descripcion {
     height: 50vh; }
     #main__actividades #section1__descripcion .sombreado .titulo {
-      font-family: none;
+      font-family: "Raleway";
       font-size: 3rem;
       letter-spacing: 1.5vw;
       padding: 0;
       margin: 1%;
       text-align: center; }
     #main__actividades #section1__descripcion .sombreado .frase {
-      font-family: none;
+      font-family: "Raleway";
       font-size: 1.2rem;
       letter-spacing: 0;
       padding: 0;
@@ -1136,28 +1176,28 @@ footer {
   #main__index #main__section1 {
     height: 35vh; }
     #main__index #main__section1 .titulo {
-      font-family: none;
-      font-size: 2.25rem;
+      font-family: "Raleway";
+      font-size: 2.025rem;
       letter-spacing: 1.5vw;
       padding: 0.5%;
       margin: 0;
       text-align: center; }
     #main__index #main__section1 .frase {
-      font-family: none;
+      font-family: "Raleway";
       font-size: 0.9rem;
       letter-spacing: 0;
       padding: 0;
       margin: 0;
       text-align: center; }
     #main__index #main__section1 .reserva {
-      font-family: none;
-      font-size: 1.8rem;
+      font-family: "Raleway";
+      font-size: 1.35rem;
       letter-spacing: 0;
       padding: 0;
       margin: 0;
       text-align: center; }
   #main__index #main__section2 .subtitulo {
-    font-family: none;
+    font-family: "Raleway";
     font-size: 1.8rem;
     letter-spacing: 0.2vw;
     padding: 0;
@@ -1167,7 +1207,7 @@ footer {
     width: 150px;
     height: 150px; }
   #main__index #main__section2 .texto {
-    font-family: none;
+    font-family: "Lato";
     font-size: 1.1rem;
     letter-spacing: 0.2vw;
     padding: 2%;
@@ -1176,7 +1216,7 @@ footer {
   #main__index #main__section3 .sombreado {
     background-color: rgba(0, 0, 0, 0.85); }
     #main__index #main__section3 .sombreado .subtitulo {
-      font-family: none;
+      font-family: "Raleway";
       font-size: 2.25rem;
       letter-spacing: 0.2vw;
       padding: 2%;
@@ -1189,14 +1229,14 @@ footer {
         width: 150px;
         height: 150px; }
       #main__index #main__section3 .sombreado .main__section3__2columnas .ubicacion .sub_subtitulo {
-        font-family: none;
+        font-family: "Raleway";
         font-size: 1.575rem;
         letter-spacing: 0.2vw;
         padding: 0;
         margin: 0;
         text-align: center; }
       #main__index #main__section3 .sombreado .main__section3__2columnas .ubicacion .texto {
-        font-family: none;
+        font-family: "Lato";
         font-size: 1.1rem;
         letter-spacing: 0.2vw;
         padding: 2%;
@@ -1209,14 +1249,14 @@ footer {
         width: 150px;
         height: 150px; }
       #main__index #main__section3 .sombreado .main__section3__2columnas .servicio .sub_subtitulo {
-        font-family: none;
+        font-family: "Raleway";
         font-size: 1.575rem;
         letter-spacing: 0.2vw;
         padding: 0;
         margin: 0;
         text-align: center; }
       #main__index #main__section3 .sombreado .main__section3__2columnas .servicio .texto {
-        font-family: none;
+        font-family: "Lato";
         font-size: 1.1rem;
         letter-spacing: 0.2vw;
         padding: 2%;
@@ -1229,14 +1269,14 @@ footer {
         width: 150px;
         height: 150px; }
       #main__index #main__section3 .sombreado .main__section3__2columnas .garantia .sub_subtitulo {
-        font-family: none;
+        font-family: "Raleway";
         font-size: 1.575rem;
         letter-spacing: 0.2vw;
         padding: 0;
         margin: 0;
         text-align: center; }
       #main__index #main__section3 .sombreado .main__section3__2columnas .garantia .texto {
-        font-family: none;
+        font-family: "Lato";
         font-size: 1.1rem;
         letter-spacing: 0.2vw;
         padding: 2%;
@@ -1249,14 +1289,14 @@ footer {
         width: 150px;
         height: 150px; }
       #main__index #main__section3 .sombreado .main__section3__2columnas .precio .sub_subtitulo {
-        font-family: none;
+        font-family: "Raleway";
         font-size: 1.575rem;
         letter-spacing: 0.2vw;
         padding: 0;
         margin: 0;
         text-align: center; }
       #main__index #main__section3 .sombreado .main__section3__2columnas .precio .texto {
-        font-family: none;
+        font-family: "Lato";
         font-size: 1.1rem;
         letter-spacing: 0.2vw;
         padding: 2%;
@@ -1265,14 +1305,14 @@ footer {
   #main__habitaciones .habit__section1 {
     height: 35vh; }
     #main__habitaciones .habit__section1 .sombreado .titulo {
-      font-family: none;
+      font-family: "Raleway";
       font-size: 2.25rem;
       letter-spacing: 0;
       padding: 0.5%;
       margin: 0;
       text-align: center; }
     #main__habitaciones .habit__section1 .sombreado .frase {
-      font-family: none;
+      font-family: "Raleway";
       font-size: 0.9rem;
       letter-spacing: 0;
       padding: 0;
@@ -1288,6 +1328,14 @@ footer {
       color: black;
       margin-left: 10px;
       margin-right: 10px; }
+      #main__habitaciones .fondo .habit__section .sub_fondo h3 {
+        font-family: "Raleway";
+        font-size: 1.35rem;
+        letter-spacing: 0;
+        padding: 0;
+        margin: 1% 1% 0 1%;
+        text-align: center;
+        grid-area: titulo; }
       #main__habitaciones .fondo .habit__section .sub_fondo .imagenes {
         max-width: 100%;
         height: 200px; }
@@ -1302,14 +1350,14 @@ footer {
   #main__restaurante #section0__menu {
     height: 35vh; }
   #main__restaurante #slider-container .titulo {
-    font-family: none;
+    font-family: "Raleway";
     font-size: 2.25rem;
     letter-spacing: 1.5vw;
     padding: 0.5%;
     margin: 0;
     text-align: center; }
   #main__restaurante #slider-container .frase {
-    font-family: none;
+    font-family: "Raleway";
     font-size: 0.9rem;
     letter-spacing: 0;
     padding: 0;
@@ -1318,19 +1366,26 @@ footer {
   #main__actividades #section1__descripcion {
     height: 35vh; }
     #main__actividades #section1__descripcion .sombreado .titulo {
-      font-family: none;
+      font-family: "Raleway";
       font-size: 2.25rem;
       letter-spacing: 0;
       padding: 0.5%;
       margin: 0;
       text-align: center; }
     #main__actividades #section1__descripcion .sombreado .frase {
-      font-family: none;
+      font-family: "Raleway";
       font-size: 0.9rem;
       letter-spacing: 0;
       padding: 0;
       margin: 0;
       text-align: center; }
+  #main__reserva .formulario h4 {
+    font-family: "Raleway";
+    font-size: 2.25rem;
+    letter-spacing: 0;
+    padding: 0;
+    margin: 1%;
+    text-align: center; }
   footer {
     display: flex;
     flex-wrap: wrap;

@@ -12,10 +12,10 @@
             text-align: center;
             @include flexbox (column, none, none, none, center);
             .titulo {
-                @include textos (none, "mayor", 1.2, 1.5vw, 0, 0 0 2% 0);
+                @include textos ("Raleway", "mayor", 1.2, 1.5vw, 0, 2% 2% 1% 2%);
             }
             .frase {
-                @include textos (none, "mayor", 0.5, 0, 0, 0);
+                @include textos ("Raleway", "mayor", 0.3, 5px, 10px, 0);
             }
         }
     }
@@ -25,7 +25,7 @@
         .habit__section {
             margin: 2%;
             .subtitulo {
-                @include textos (none, "mayor", 0.8, 0.2vw, 0, 2% 2% 1% 2%);
+                @include textos ("Raleway", "mayor", 0.8, 0.2vw, 0, 2% 2% 1% 2%);
             }
             .sub_fondo {
                 color: black;
@@ -43,11 +43,11 @@
                     grid-area: imagen;
                 }
                 h3 {
-                    @include textos (none, "mayor", 0.4, 0, 0, 1% 1% 0 1%);
+                    @include textos ("Raleway", "mayor", 0.4, 0, 0, 1% 1% 0 1%);
                     grid-area: titulo;
                 }
                 p {
-                    @include textos (none, "default", 1.5, 0.08vw, 0, 0 1% 1% 1%);   
+                    @include textos ("Lato", "default", 1.5, 0.08vw, 0, 0 1% 1% 1%);   
                     grid-area: texto;
                 }
             }
@@ -56,9 +56,8 @@
     a {
         @include flexbox (row, none, none, none, center);
         color: bisque;
-        font-size: 3.6rem;
+        @include textos ("Raleway", "mayor", 0.8, 0, 0, 40px);
         text-decoration: none;
-        margin: 40px;
         cursor: pointer;
         &:hover {
             background: bisque;

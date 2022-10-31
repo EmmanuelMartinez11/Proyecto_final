@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Reserva ahora en una de nuestras sucursales, donde quieras y cuando quieras">
     <meta name="keywords"  content="HOTEL, HOTELES INTERNACIONALES, RESERVA, RESERVA AHORA, RESERVAR HABITACION">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway:ital,wght@1,800&family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="../assets/favicon.png">
@@ -75,22 +78,26 @@
             </div>
 
             <div>
+                Elija su destino
                 <select name="Sucursal" required class="ingresar">
                     <option value="CV">City Villa</option>
                     <option value="BV">Beach Villa</option>
                     <option value="MV">Mountain Villa</option>
                 </select>
             </div>
-
-            <div class="ingresar">Reservar desde:
-                <span>
-                    <input type="date" class="ingresar">
-                </span>
-                hasta:
-                <span> 
-                    <input type="date" class="ingresar">
-                </span>
+            <div>
+                Elija sus días
+                <div class="ingresar">Reservar desde:
+                    <span>
+                        <input type="date" class="ingresar">
+                    </span>
+                    hasta:
+                    <span> 
+                        <input type="date" class="ingresar">
+                    </span>
+                </div>
             </div>
+            
 
             <div>
                 <input type="submit" value="Reservar" class="boton">

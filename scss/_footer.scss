@@ -1,11 +1,9 @@
 footer {
     grid-area: footer;
     background-color: black;
-    font-size: 1.5rem;
+    @include textos ("Roboto", "default", 1.5, 0, 1% 0 1% 0, 0);
     @include flexbox (row, center, none, none, space-around);
     grid-area: footer; 
-    padding-top: 1%;
-    padding-bottom: 1%;
     div {
         padding: 1%;
         a {
